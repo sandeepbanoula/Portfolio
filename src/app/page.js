@@ -31,7 +31,7 @@ export default function Home() {
         {/* Intro & Call-to-action */}
         <div className="md:row-start-2 md:pr-10">
           <p className="text-xl pb-5 md:pb-7 lg:text-2xl text-justify">
-            I am a passionate web developer with a flair for turning ideas into functional code. Explore my projects and let's collaborate!
+            {`I am a passionate web developer with a flair for turning ideas into functional code. Explore my projects and let's collaborate!`}
           </p>
           <a href="#" className="bg-green-500 text-xl inline-block lg:text-2xl text-white dark:text-black font-semibold px-5 py-3 rounded-3xl">Explore Projects</a>
         </div>

@@ -10,3 +10,26 @@
   color: rgb(34 197 94);
   z-index: -1;
 }
+
+#skills::before {
+  content: "SKILLS";
+  position: absolute;
+  opacity: 0.25;
+  font-size: 5rem;
+  color: rgb(34 197 94);
+  z-index: -1;
+}
+
+.pushDownRope:not(:active) {
+  animation: pushDown 1s;
+}
+
+/* @keyframes pushDown {
+  0%,
+  100% {
+    top: -6rem;
+  }
+  50% {
+    top: -3rem;
+  }
+} */

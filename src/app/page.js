@@ -1,5 +1,8 @@
 import Image from "next/image";
 import heroImage from "../../public/heroImg.svg";
+import ropeImage from "../../public/rope.png";
+import ThemeButton from "./themeButton";
+import bulb from "../../public/bulb.png";
 
 export default function Home() {
   return (
@@ -7,15 +10,18 @@ export default function Home() {
       {/* Navbar */}
       <nav className="grid items-center py-8 sm:grid-cols-2 md:grid-cols-[1fr_2fr] lg:py-12 xl:grid-cols-[2fr_1fr]">
         <div className="text-2xl">SJavascript</div>
-        <ul className="hidden grid-cols-[repeat(4,_auto)] items-center justify-items-end text-xl md:grid">
+        <ul className="hidden grid-cols-[repeat(5,_auto)] items-center justify-items-end text-xl md:grid">
           <li>
             <a href="">Home</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#about-me">About</a>
           </li>
           <li>
-            <a href="#about-me">About</a>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
           </li>
           <li className="border-2 border-green-500 p-2">
             <a href="#contact-me">Contact</a>
@@ -53,6 +59,7 @@ export default function Home() {
             alt=""
             width="500px"
             className="md:ml-auto md:w-11/12"
+            priority
           />
         </div>
       </div>
@@ -70,8 +77,27 @@ export default function Home() {
         </div>
       </div>
       {/* Skill Section */}
+      <div id="skills" className="py-5 lg:py-12">
+        <div>
+          <h2 className="text-7xl py-5 md:py-2">SKILLS</h2>
+        </div>
+        <div className="md:grid">
+          <div>
+            <h3 className="text-4xl">Frontend</h3>
+            <p className="text-xl lg:text-2xl"></p>
+          </div>
+          <div>
+            <h3 className="text-4xl">Backend</h3>
+          </div>
+          <div>
+            <h3 className="text-4xl">CMS</h3>
+          </div>
+        </div>
+      </div>
       {/* Projects */}
       {/* Contact */}
+      {/* Theme Change */}
+      <ThemeButton src={ropeImage} />
     </div>
   );
 }

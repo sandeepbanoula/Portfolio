@@ -12,7 +12,14 @@ module.exports = {
         pushDown: {
           '0% 100%': { top: '-6rem' },
           '50%': { top: '-4rem' }
+        },
+        sway: {
+          '0%, 100%': { transform: "translateX(-10%)" },
+          '50%': { transform: 'translateX(0)' },
         }
+      },
+      animation: {
+        sway: 'sway 1.5s ease-in-out infinite',
       }
     }
   },

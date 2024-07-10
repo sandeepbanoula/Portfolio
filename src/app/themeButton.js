@@ -1,18 +1,31 @@
 "use client";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function ThemeButton({ src }) {
-    const switchMode = () => {
+    const [theme, setTheme] = useState(() => {
+        if (typeof window !== 'undefined') {
+        const value = localStorage.getItem("theme");
+        if (!value) return window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light";
+        return value
+        }
+    });
+    useEffect(()=>{
         const html = document.getElementsByTagName("html")[0];
-        const themeRope = document.getElementById("themeRope");
-        // themeRope.classList.remove("pushDownRope");
-        // themeRope.classList.add("pushDownRope");
-        if (localStorage.theme !== 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            localStorage.setItem("theme", "dark");
+        if(theme == "dark"){
+            localStorage.setItem("theme", theme);
             html.classList.add('dark')
-        } else {
-            localStorage.setItem("theme", "light");
+        }else{
+            localStorage.setItem("theme", theme);
             html.classList.remove('dark')
+        }
+    },[theme]);
+    const switchMode = () => {
+        
+        if (theme !== 'dark') {
+            setTheme("dark");
+        } else {
+            setTheme("light");
         }
     }
     return (

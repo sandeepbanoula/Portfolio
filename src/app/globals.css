@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* Track/Bar color */
+::-webkit-scrollbar-track {
+  background-color: rgb(34 197 94);
+}
+
+/* Handle color */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+#about-me {
+  animation: change-color;
+}
+
+@change-color {
+  0% {
+    background-color: #ccc;
+  }
+  100% {
+    background-color: #000;
+  }
+}
+
 #about-me::after {
   content: "ABOUT ME";
   position: absolute;
@@ -11,7 +39,7 @@
   z-index: -1;
 }
 
-#skills::before {
+#skills .heading::before {
   content: "SKILLS";
   position: absolute;
   opacity: 0.25;
@@ -20,8 +48,47 @@
   z-index: -1;
 }
 
+@media (max-width: 1024px) {
+  #skills .heading::before {
+    font-size: 3.5rem;
+  }
+  #about-me::after {
+    font-size: 3.5rem;
+  }
+}
+
+.skill-carousel {
+  overflow-x: scroll;
+}
+
+.skill-carousel::-webkit-scrollbar {
+  height: 0px; /* Width of the scrollbar */
+}
+
+.skill-carousel img {
+  height: 5.5rem;
+  transition: height 0.3s ease-out;
+}
+
+.skill-carousel img:hover {
+  height: 6rem;
+}
+
 .pushDownRope:not(:active) {
   animation: pushDown 1s;
+}
+
+.carousel-primary {
+  animation: scroll-horizontal 20s linear infinite;
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    left: 20%;
+  }
+  100% {
+    left: -100%;
+  }
 }
 
 /* @keyframes pushDown {

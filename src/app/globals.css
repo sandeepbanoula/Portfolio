@@ -17,43 +17,37 @@
   background-color: #888;
 }
 
-#about-me {
-  animation: change-color;
+.heading {
+  position: relative;
 }
 
-@change-color {
-  0% {
-    background-color: #ccc;
-  }
-  100% {
-    background-color: #000;
-  }
-}
-
-#about-me::after {
-  content: "ABOUT ME";
+.heading::before {
   position: absolute;
   opacity: 0.25;
-  font-size: 5rem;
+  font-size: 4rem;
   color: rgb(34 197 94);
   z-index: -1;
+}
+
+#about-me .heading::before {
+  content: "ABOUT ME";
 }
 
 #skills .heading::before {
   content: "SKILLS";
-  position: absolute;
-  opacity: 0.25;
-  font-size: 5rem;
-  color: rgb(34 197 94);
-  z-index: -1;
+}
+
+#projects .heading::before {
+  content: "PROJECTS";
+}
+
+#contact .heading::before {
+  content: "LETS CONNECT";
 }
 
 @media (max-width: 1024px) {
-  #skills .heading::before {
-    font-size: 3.5rem;
-  }
-  #about-me::after {
-    font-size: 3.5rem;
+  .heading::before {
+    font-size: 2.5rem;
   }
 }
 
@@ -67,36 +61,66 @@
 
 .skill-carousel img {
   height: 5.5rem;
-  transition: height 0.3s ease-out;
+  transition:
+    height 0.3s ease-out,
+    filter 0.5s ease-out;
+  filter: grayscale(100%);
 }
 
 .skill-carousel img:hover {
   height: 6rem;
+  filter: grayscale(0%);
 }
 
 .pushDownRope:not(:active) {
   animation: pushDown 1s;
 }
 
-.carousel-primary {
-  animation: scroll-horizontal 20s linear infinite;
+/* Nav Menu Transition */
+#header li {
+  position: relative;
 }
 
-@keyframes scroll-horizontal {
-  0% {
-    left: 20%;
-  }
-  100% {
-    left: -100%;
-  }
+#header a::after {
+  content: "";
+  background-color: #22c55e;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 2px;
+  width: 0px;
+  transition:
+    width 0.2s ease-in,
+    left 0.2s ease-in;
 }
 
-/* @keyframes pushDown {
-  0%,
-  100% {
-    top: -6rem;
+#header a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Button Transition */
+.btn {
+  border-width: 4px;
+  background-color: #065f46;
+}
+
+.btn a {
+  transform: translate(0px, -10px);
+  transition:
+    transform 0.2s ease-in-out,
+    background-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+}
+.btn a:active {
+  transform: translate(0px, 0px);
+  background-color: #1ca950;
+  box-shadow: inset 0px -3px #065f46;
+}
+@media (min-width: 640px) {
+  .btn a:hover {
+    transform: translate(0px, 0px);
+    background-color: #1ca950;
+    box-shadow: inset 0px -3px #065f46;
   }
-  50% {
-    top: -3rem;
-  }
-} */
+}

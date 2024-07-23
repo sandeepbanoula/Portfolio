@@ -110,10 +110,10 @@ export default function Home() {
             <h2 className="text-4xl lg:text-6xl">ABOUT ME</h2>
           </div>
           <div>
-            <p className="text-justify text-xl lg:text-2xl">I am a full stack web developer from Uttarakhand, India. I have a batchelors's degree in Computer Science
+            <p className="text-justify text-xl lg:text-2xl">I am a full stack web developer from Uttarakhand, India. I have a batchelors&apos;s degree in Computer Science
               and I have been working as a web developer for over 5 years. I love building web applications that
-              are fast, secure, and scalable using Node.js and React.js. I'm always curious about new challenges and opportunities.
-              When I'm not coding, I like to travel, play video games, and binge webshows.</p>
+              are fast, secure, and scalable using Node.js and React.js. I&apos;m always curious about new challenges and opportunities.
+              When I&apos;m not coding, I like to travel, play video games, and binge webshows.</p>
           </div>
         </div>
         {/* Skill Section */}

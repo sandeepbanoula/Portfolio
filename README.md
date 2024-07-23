@@ -1,7 +1,9 @@
 <div align="center">
   # GenZ-Sandeep (still in search for better name!!)
 
-  Hey, it's Sandeep and this is my <a href="https://sandeepbanoula.github.io/Portfolio/" target="_blank">portfolio</a>.  Do not forget to 'star'⭐ the repository, if you like it. 
+  [![Github Pages](https://github.com/sandeepbanoula/Portfolio/actions/workflows/nextjs.yml/badge.svg)](https://github.com/sandeepbanoula/Portfolio/actions/workflows/nextjs.yml)
+
+  Hey, it's Sandeep and this is my <a href="https://sandeepbanoula.github.io/Portfolio/" target="_blank">portfolio</a>. Do not forget to 'star'⭐ the repository, if you like it. 
 </div>
 
 ### 🎉

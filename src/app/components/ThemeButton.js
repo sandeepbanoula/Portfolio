@@ -31,7 +31,7 @@ export default function ThemeButton({ src }) {
     return (
         <Image src={src}
             id="themeRope"
-            className="fixed right-5 -top-24 [&:not(:active)]:animate-[pushDown_0.5s]"
+            className="fixed right-0 lg:right-5 -top-24 [&:not(:active)]:animate-[pushDown_0.5s]"
             onClick={switchMode}
             draggable="false"
             alt="rope"

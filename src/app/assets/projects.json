@@ -1,0 +1,47 @@
+{
+  "projects": [
+    {
+      "name": "Notebook",
+      "description": "Developed Notebook an innovative web application designed for efficient online assignment management, catering to both teachers and students.",
+      "link": "https://github.com/sandeepbanoula/NoteBook",
+      "images": [
+        "/notebook/1.png",
+        "/notebook/2.png",
+        "/notebook/3.png",
+        "/notebook/4.png"
+      ],
+      "skills": ["Node.js", "EJS", "Bootstrap", "MySql"]
+    },
+    {
+      "name": "Flood Prediction UI",
+      "description": "Flood Prediction UI is a web user interface which can be incoporated with backend for Machine Learning(ML/AI) projects. It also uses free WeatherApi and browser GeoLocation API to fetch user's current location weather. ",
+      "link": "https://github.com/sandeepbanoula/FloodPrediction",
+      "images": [
+        "/floodPrediction/1.jpg"
+      ],
+      "skills": [
+        "HTML",
+        "CSS",
+        "JS",
+        "Bootstrap",
+        "Geolocation API",
+        "WeatherApi"
+      ]
+    },
+    {
+      "name": "Book Genre Organizer",
+      "description": "BookGenreOrganizer is a tool designed to automatically categorize ePub and PDF books into genre-specific folders based on their metadata. The tool fetches genre information from the Google Books API and organizes the books into folders named after their genres.",
+      "link": "https://github.com/sandeepbanoula/BookGenreOrganizer",
+      "skills": [
+        "Python",
+        "Google Books API"
+      ]
+    },
+    {
+      "name": "Thoughts Tracker",
+      "description": "Thought Tracker offers a secure and organized digital space for individuals to store and manage their personal thoughts. By addressing the need for modernized introspection, this app simplifies thought organization and fosters a more connected and efficient reflection process.",
+      "link": "https://github.com/sandeepbanoula/ThoughtsTracker",
+      "skills": ["HTML", "CSS", "Bootstrap", "PHP", "MySql"]
+    }
+  ]
+}

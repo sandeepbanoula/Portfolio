@@ -124,3 +124,33 @@
     box-shadow: inset 0px -3px #065f46;
   }
 }
+
+/* Project */
+
+/* .project img{
+  z-index: -1;
+  transition: zoom 0.2s ease-in,;
+  border: black 2px solid;
+}
+
+.project:hover img{
+    zoom: 1.5;
+} */
+
+.project:hover .project-link{
+  color: #22c55e;
+}
+
+.project a::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.project-lite{
+  width: 31%;
+}

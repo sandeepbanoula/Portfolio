@@ -1,0 +1,10 @@
+{
+  "html": {
+    "title": "HTML 5",
+    "image": "/html-5.svg"
+  },
+  "css": {
+    "css": "CSS 3",
+    "image": "/css-3.svg"
+  }
+}

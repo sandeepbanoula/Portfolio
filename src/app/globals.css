@@ -137,11 +137,11 @@
     zoom: 1.5;
 } */
 
-.project:hover .project-link{
+.project:hover .project-link {
   color: #22c55e;
 }
 
-.project a::before{
+.project a::before {
   content: "";
   position: absolute;
   left: 0;
@@ -151,6 +151,6 @@
   z-index: 0;
 }
 
-.project-lite{
+.project-lite {
   width: 31%;
 }

@@ -16,9 +16,7 @@
       "name": "Flood Prediction UI",
       "description": "Flood Prediction UI is a web user interface which can be incoporated with backend for Machine Learning(ML/AI) projects. It also uses free WeatherApi and browser GeoLocation API to fetch user's current location weather. ",
       "link": "https://github.com/sandeepbanoula/FloodPrediction",
-      "images": [
-        "/floodPrediction/1.jpg"
-      ],
+      "images": ["/floodPrediction/1.jpg"],
       "skills": [
         "HTML",
         "CSS",
@@ -32,10 +30,7 @@
       "name": "Book Genre Organizer",
       "description": "BookGenreOrganizer is a tool designed to automatically categorize ePub and PDF books into genre-specific folders based on their metadata. The tool fetches genre information from the Google Books API and organizes the books into folders named after their genres.",
       "link": "https://github.com/sandeepbanoula/BookGenreOrganizer",
-      "skills": [
-        "Python",
-        "Google Books API"
-      ]
+      "skills": ["Python", "Google Books API"]
     },
     {
       "name": "Thoughts Tracker",

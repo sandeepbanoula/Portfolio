@@ -107,7 +107,7 @@ export default function Home() {
             <h2 className="text-4xl lg:text-6xl">SKILLS</h2>
           </div>
           <SkillsCarousel />
-          
+
           <div id="scrollSkill" className="h-12 w-12 flex items-center justify-self-center bg-green-500 rounded-full animate-sway">
             <Image src={rightArrow} alt="next" className="w-full h-4/6" />
           </div>

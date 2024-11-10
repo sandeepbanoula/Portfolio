@@ -37,6 +37,12 @@
       "description": "Thought Tracker offers a secure and organized digital space for individuals to store and manage their personal thoughts. By addressing the need for modernized introspection, this app simplifies thought organization and fosters a more connected and efficient reflection process.",
       "link": "https://github.com/sandeepbanoula/ThoughtsTracker",
       "skills": ["HTML", "CSS", "Bootstrap", "PHP", "MySql"]
-    }
+    },
+     {
+       "name": "Thoughts Tracker",
+       "description": "Thought Tracker offers a secure and organized digital space for individuals to store and manage their personal thoughts. By addressing the need for modernized introspection, this app simplifies thought organization and fosters a more connected and efficient reflection process.",
+       "link": "https://github.com/sandeepbanoula/ThoughtsTracker",
+       "skills": ["HTML", "CSS", "Bootstrap", "PHP", "MySql"]
+     }
   ]
 }

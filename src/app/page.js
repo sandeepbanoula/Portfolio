@@ -36,7 +36,7 @@ export default function Home() {
       <div className="grid px-8 lg:px-24">
         {/* Navbar */}
         <nav id="header" className="grid items-center py-8 sm:grid-cols-2 md:grid-cols-[1fr_2fr] lg:py-12 xl:grid-cols-[2fr_1fr]">
-          <div className="text-2xl">GenZ-Sandeep</div>
+          <div className="text-2xl">Sandeep Banoula</div>
           <ul className="hidden grid-cols-[repeat(5,_auto)] items-center justify-items-end text-xl md:grid">
             <li>
               <a href="#">Home</a>
